@@ -3,7 +3,7 @@ services:
   resume-make:
     build:
       context: .
-      dockerfile: ./.docker/Dockerfile
+      dockerfile: ./Dockerfile
     container_name: resume-make
     entrypoint: /entrypoint.sh
     image: resume-make
