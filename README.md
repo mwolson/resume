@@ -32,6 +32,10 @@ Make everything
 docker-compose up -d
 ```
 
+#### Custom styles
+
+You can check the styles directory to custom your file styles. Make sure you system have the corresponding font in your style file, such as changing "Helvetica" to "freesans".
+
 ### Requirements
 
 If not using `docker` then you will need the following dependencies.
