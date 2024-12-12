@@ -32,6 +32,13 @@ Make everything
 docker-compose up -d
 ```
 
+Reset Docker state
+
+```bash
+docker rm -vf $(docker ps -aq)
+docker image rm resume-make
+```
+
 #### Custom styles
 
 You can check the styles directory to custom your file styles. Make sure you system have the corresponding font in your style file, such as changing "Helvetica" to "freesans".
