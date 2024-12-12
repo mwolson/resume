@@ -28,6 +28,10 @@ make html
 
 Make everything
 
+First ensure that `actions/action.yml` has a `runs.image` field that matches your repository, if you are using a fork.
+
+Then run:
+
 ```bash
 docker-compose up -d
 ```
