@@ -23,13 +23,8 @@ jobs:
           tags: ${{ env.IMAGE_NAME }}
       - name: Build the Resume
         run: docker run --rm -v ${PWD}:/home/app/resume ${{env.IMAGE_NAME}} EXPORT_DIR=output/resume html pdf export
-      - name: Upload HTML
+      - name: Upload Resume as zip archive
         uses: actions/upload-artifact@v4
         with:
-          name: resume.html
-          path: output/resume/resume.html
-      - name: Upload PDF
-        uses: actions/upload-artifact@v4
-        with:
-          name: resume.pdf
-          path: output/resume/resume.pdf
+          name: resume
+          path: output/resume/*
