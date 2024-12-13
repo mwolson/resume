@@ -29,11 +29,17 @@ Sr. Manager:
 
 **Ticketmaster: Sr. Engineer** (2008-2016)
 
+Supported and main production websites written in Java, Perl, and React for displaying event information and purchasing events. Helped prepare for very large amounts of traffic during onsale situations, improved performance and quality, and developed load tests.
+
+Sr. Engineer:
 :    Wrote Node.js Platform Microservice that scaled to 1MM+ requests per day, supported with custom analytics and reporting.
-:    Supported and main production websites written in Java, Perl, and React for displaying event information and purchasing events. Helped prepare for very large amounts of traffic during onsale situations and developed load tests. Helped migrate to Docker.
+:    Helped migrate the Ticketmaster events website to Docker.
 :    Cut request latency in half for a data orchestration service by placing a CDN in front of it. Wrote unit tests for the CDN integration along with a [custom Bash framework](https://github.com/mwolson/barrt-sh) to run them.
 :    Helped spin up and configure the company's GitLab instance, and wrote presentations to advise on Git and GitLab as key technology choices to replace SVN.
-:    Had involvement in the early development idea for [Talkback](https://github.com/ijpiantanida/talkback) while the author contracted for Ticketmaster, and adapted our integration test suite to use it. Talkback is a JS proxy that allowe requests to multiple local services to be captured together and replayed for reproducible and maintainable integration tests.
+:    Had involvement in the early development idea for [Talkback](https://github.com/ijpiantanida/talkback) while the author contracted for Ticketmaster, and adapted our integration test suite to use it. Talkback is a JS proxy that allowed requests for multiple local services to be captured together and replayed for reproducible and maintainable integration tests.
+:    Wrote a codemod to incrementally and automatically perform a very large code migration that spanned multiple sprints.
+:    Wrote the first integration of an interactive seatmap into the Ticketmaster events website. Before React was written, used DOM diffs to improved performance of tooltip rendering when moving mouse over a large number of seats on the seatmap.
+:    Wrote and presented a well-received presentation on Performance during an All Engineering meeting which benchmarked and explained the underlying factors contributing to REST API performance of several languages at scale: Go, Erlang, Java, Perl.
 
 Technical Experience
 --------------------
