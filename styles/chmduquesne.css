@@ -39,7 +39,7 @@ h2 {
 h2:before {
     content: "";
     display: inline-block;
-    margin-right:1%;
+    margin-right: 17px;
     width: 16%;
     height: 10px;
     /* This is called "rulecolor" in the ConTeXt stylesheet. */
