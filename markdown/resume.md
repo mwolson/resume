@@ -15,7 +15,7 @@ Experience
 Improved various features on the existing messenger app, which is used by doctors and nurses at hospitals to reduce the number of fatal accidents, improve staff retention and happiness, and cut wait times for the ER by about half.
 
 Staff Engineer:
-:    **Messenger Web App:** Improved website page load performance, build pipeline performance, and responsiveness under load. Key technologies: React, MobX, Redux ToolKit (RTK), SCSS, Playwright.
+:    **Messenger Web App:** Improved website page load performance, GitHub Actions build pipeline performance, and responsiveness under load. Key technologies: React, MobX, Redux ToolKit (RTK), SCSS, Playwright.
 :    **Electron Desktop App**: Wrote a TypeScript Electron app to allow the Messenger website to run with additional functionality such as native OS notifications for incoming messages and alerts. Extended 5+ npm libraries to provide early support for a new version of Electron.
 :    **AWS Cloudfront Node.js Lambda:** Wrote sophisticated routing and support for rolling deployments of the Messenger website to 4 US regions, as well as the company's only unit testing and integration testing of a single layer of infrastructure.
 :    **Customer Support:** Interfaced with a 1MM+ ARR customer to solve complex responsiveness problems with the Messenger app, providing a multi-stage plan along with presenting timely updates as the work progressed. Result: Customer was impressed and retained their subscription.
@@ -51,15 +51,15 @@ Gift Exchange Website
 :   Side project to allow family members to buy each other gifts for the holiday and avoid having two people buy the same gift for the same person.
 
     * Wrote the website infrastructure using a mix of **Skaffold**, **Kubernetes** (k3d and k3s), **Docker**, and **Deno**.
-    * Deployed the resulting Bookstack and MariaDB pods to a k3d cluster on a single server node as an exercise in keeping costs manageable.
-    * Tested changes locally using Skaffold profiles deployed to Rancher Desktop
-    * Configured CloudFlare as a CDN
+    * Deployed the resulting Bookstack and MariaDB pods to a k3d cluster on a single Arch Linux server node with the built-in **Traefik** ingress controller as an exercise in keeping costs manageable.
+    * Tested changes locally using Skaffold profiles deployed to Rancher Desktop.
+    * Configured CloudFlare as a CDN.
 
 Resume Repo
 :   Created a [GitHub Repo](https://github.com/mwolson/resume) to publish [my Resume](https://mwolson.github.io/resume/) to HTML and PDF using Markdown as a source format. This was adapted from a different existing project. Key adapations:
 
-    * Improved Makefile to run docker-compose with a list of formats to build
-    * Added GitHub Actions pipeline to build and publish to GitHub Pages
+    * Improved Makefile to run docker-compose with a list of formats to build.
+    * Added GitHub Actions pipeline to build and publish to GitHub Pages.
     * Implemented landing page using Tailwind CSS.
 
 Open Source
@@ -79,7 +79,11 @@ Programming Languages
 
 :   **Java:** 5+ years of writing web backends and Platform microservices.
 
-:   Basic knowledge of **Powershell**, **C/C++**, **Lisp**, **Perl**, **Python**, **SML**.
+:   Basic knowledge of **Powershell**, **Ansible**, **Terraform**, **C/C++**, **Lisp**, **Perl**, **Python**, **SML**.
+
+Operating Systems
+:   **Linux:** 20+ years of experience on Arch, Debian, Ubuntu, and Fedora. Was a package maintainer for Debian and Ubuntu.
+:   **Windows:** 5+ years of experience supporting customers of a desktop app, including problem-solving around Integrated Windows Authentication (IWA) for SSO support.
 
 Education
 ---------
