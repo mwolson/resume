@@ -1,46 +1,39 @@
-Johnny Coder
+Mike Olson
 ============
 
 ----
 
->  In this style, the resume starts with a blockquote, where
->  you can briefly list your specialties, or include a salient
->  quote. Ending a line with a backslash forces a line break.
+>  Qualified for Staff Software Engineer and Director positions in Frontend, Platform, or DevOps
 
 ----
-
-Education
----------
-
-2010-2014 (expected)
-:   **PhD, Computer Science**; Awesome University (MyTown)
-
-    *Thesis title: Deep Learning Approaches to the Self-Awesomeness
-     Estimation Problem*
-
-2007-2010
-:   **BSc, Computer Science and Electrical Engineering**; University of
-    HomeTown (HomeTown)
-
-    *Minor: Awesomeology*
 
 Experience
 ----------
 
-**Your Most Recent Work Experience:**
+**TigerConnect: Staff Engineer, Sr. Manager** (2017-2024)
 
-Short text containing the type of work done, results obtained,
-lessons learned and other remarks. Can also include lists and
-links:
+Improved various features on the existing messenger app, which is used by doctors and nurses at hospitals to reduce the number of fatal accidents, improve staff retention and happiness, and cut wait times for the ER by about half.
 
-* First item
+Staff Engineer:
+:    **React-based Messenger App:** Improved page load performance, build pipeline performance, and responsiveness under load.
+:    **Electron Desktop App**: Wrote a TypeScript Electron app to allow the Messenger website to run with additional functionality such as native OS notifications for incoming messages and alerts. Extended 5+ npm libraries to provide early support for a new version of Electron.
+:    **Cloudfront Node.js Lambda:** Wrote sophisticated routing and support for rolling deployments to 4 US regions, as well as the company's only unit testing and integration testing of a single layer of infrastructure.
+:    **Customer Support:** Interfaced with a 1MM+ ARR customer to solve complex responsiveness problems with the Messenger app, providing a multi-stage plan along with presenting timely updates as the work progressed. Result: Customer was impressed and retained their subscription.
 
-* Item with [link](http://www.example.com). Links will work both in
-  the html and pdf versions.
+Sr. Manager:
+:    **Upleveling:** Mentored engineers and guided them towards achieving their goals, facilitating career advancement.
+:    **Quality Control:** Added linters to the team projects to speed up code reviews and catch mistakes early.
+:    **On-time Delivery:** Guided the team to provide accurate high-level and mid-level project estimates. Result: the team completed projects on time using Agile/SCRUM methodologies.
 
-**That Other Job You Had**
+----
 
-Also with a short description.
+**Ticketmaster: Sr. Engineer** (2008-2016)
+
+:    Wrote Node.js Platform Microservice that scaled to 1MM+ requests per day, supported with custom analytics and reporting.
+:    Supported and main production websites written in Java, Perl, and React for displaying event information and purchasing events. Helped prepare for very large amounts of traffic during onsale situations and developed load tests. Helped migrate to Docker.
+:    Cut request latency in half for a data orchestration service by placing a CDN in front of it. Wrote unit tests for the CDN integration along with a [custom Bash framework](https://github.com/mwolson/barrt-sh) to run them.
+:    Helped spin up and configure the company's GitLab instance, and wrote presentations to advise on Git and GitLab as key technology choices to replace SVN.
+:    Had involvement in the early development idea for [Talkback](https://github.com/ijpiantanida/talkback) while the author contracted for Ticketmaster, and adapted our integration test suite to use it. Talkback is a JS proxy that allowe requests to multiple local services to be captured together and replayed for reproducible and maintainable integration tests.
 
 Technical Experience
 --------------------
@@ -80,6 +73,21 @@ Programming Languages
 :   Basic knowledge of **C**, **x86 assembly**, **forth**, **Common Lisp**
 
 [ref]: https://github.com/githubuser/superlongprojectname
+
+Education
+---------
+
+2010-2014 (expected)
+:   **PhD, Computer Science**; Awesome University (MyTown)
+
+    *Thesis title: Deep Learning Approaches to the Self-Awesomeness
+     Estimation Problem*
+
+2007-2010
+:   **BSc, Computer Science and Electrical Engineering**; University of
+    HomeTown (HomeTown)
+
+    *Minor: Awesomeology*
 
 Extra Section, Call it Whatever You Want
 ----------------------------------------

@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Resume Landing Page</title>
+    <title>Mike Olson's Resume</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
     <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
@@ -14,7 +14,15 @@
     <script type="text/babel">
       function ResumeLandingPage() {
         return (
-          <div className="min-h-screen flex items-center justify-center bg-gray-100">
+          <div className="min-h-screen flex flex-col items-center justify-center bg-gray-100">
+            <header className="text-center mb-12">
+              <h1 className="text-5xl font-bold text-gray-800 mb-4">
+                Mike Olson's Resume
+              </h1>
+              <p className="text-xl text-gray-600">
+                Professional Portfolio and Career Highlights
+              </p>
+            </header>
             <div className="flex space-x-8">
               <a
                 href="resume.html"
