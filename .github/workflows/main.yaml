@@ -22,14 +22,9 @@ jobs:
           load: true
           tags: ${{ env.IMAGE_NAME }}
       - name: Build the Resume
-        run: docker run --rm -v ${PWD}:/home/app/resume ${{env.IMAGE_NAME}}
-      - name: Upload PDF
-        uses: actions/upload-artifact@v3
+        run: docker run --rm -v ${PWD}:/home/app/resume ${{env.IMAGE_NAME}} EXPORT_DIR=output/resume html pdf export
+      - name: Upload Resume
+        uses: actions/upload-artifact@v4
         with:
-          name: Resume PDF # optional, default is artifact
-          path: output/*.pdf
-      - name: Upload HTML
-        uses: actions/upload-artifact@v3
-        with:
-          name: Resume HTML # optional, default is artifact
-          path: output/*.html
+          name: Resume
+          path: output/resume/*

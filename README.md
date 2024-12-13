@@ -32,10 +32,17 @@ Make everything
 make docker
 ```
 
+Make specifics
+
+```bash
+make FORMATS="html pdf" docker
+```
+
 or without having `make` installed:
 
 ``` bash
-docker compose build && docker compose up && docker compose down
+docker compose run --build --rm resume-make html pdf
+docker compose down
 ```
 
 Reset Docker state

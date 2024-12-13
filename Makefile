@@ -2,6 +2,8 @@ OUT_DIR=output
 IN_DIR=markdown
 STYLES_DIR=styles
 STYLE=chmduquesne
+FORMATS=
+EXPORT_DIR=
 
 all: html pdf docx rtf txt
 
@@ -67,6 +69,26 @@ clean:
 	rm -fr $(OUT_DIR)/*
 
 docker: clean
-	docker compose build
-	docker compose up
+	docker compose run --build --rm resume-make $(FORMATS)
 	docker compose down
+
+export:
+	@if [ -z "$(EXPORT_DIR)" ]; then \
+		echo >&2 "Usage: make EXPORT_DIR=some-dir export"; \
+		echo >&2; \
+		echo >&2 "Error: EXPORT_DIR not provided"; \
+		exit 1; \
+	fi
+	mkdir -p $(EXPORT_DIR)
+	@for f in $(OUT_DIR)/*; do \
+		if [ ! -f "$$f" ]; then \
+			continue; \
+		fi; \
+		FILE_NAME=`basename $$f`; \
+		for ext in html pdf docx rtf txt; do \
+			if [ `basename $$FILE_NAME .$$ext` != "$$FILE_NAME" ]; then \
+				cp $$f $(EXPORT_DIR); \
+				echo $(EXPORT_DIR)/$$FILE_NAME; \
+			fi; \
+		done; \
+	done \

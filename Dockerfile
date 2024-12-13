@@ -6,4 +6,4 @@ ENV TEXMF /usr/share/texmf-dist
 
 WORKDIR /home/app/resume
 
-ENTRYPOINT ["make", "pdf", "html"]
+ENTRYPOINT ["make"]
