@@ -64,4 +64,9 @@ version:
 	fi \
 
 clean:
-	rm -f $(OUT_DIR)/*
+	rm -fr $(OUT_DIR)/*
+
+docker: clean
+	docker compose build
+	docker compose up
+	docker compose down

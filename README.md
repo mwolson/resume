@@ -29,7 +29,13 @@ make html
 Make everything
 
 ```bash
-docker-compose up -d
+make docker
+```
+
+or without having `make` installed:
+
+``` bash
+docker compose build && docker compose up && docker compose down
 ```
 
 Reset Docker state
