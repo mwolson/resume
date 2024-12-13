@@ -1,7 +1,6 @@
-name: Build and upload resume as zip archive
+name: Build Resume
 on:
   create:
-  workflow_call:
   workflow_dispatch:
   push:
     branches: [master]
