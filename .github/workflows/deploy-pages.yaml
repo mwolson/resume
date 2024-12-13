@@ -1,4 +1,4 @@
-name: Deploy static content to Pages
+name: Deploy resume to Pages
 
 on:
   create:
@@ -20,7 +20,7 @@ concurrency:
 
 jobs:
   build:
-    uses: ./.github/workflows/main.yml
+    uses: ./.github/workflows/main.yaml
   deploy:
     needs: [build]
     environment:

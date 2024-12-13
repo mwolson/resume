@@ -1,4 +1,4 @@
-name: Build and upload resume
+name: Build and upload resume as zip archive
 on:
   create:
   workflow_call:
