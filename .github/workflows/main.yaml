@@ -1,6 +1,7 @@
 name: Build and upload resume
 on:
   create:
+  workflow_call:
   workflow_dispatch:
   push:
     branches: [master]
