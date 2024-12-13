@@ -24,6 +24,7 @@ Sr. Manager:
 :    **Upleveling:** Mentored engineers and guided them towards achieving their goals, facilitating career advancement.
 :    **Quality Control:** Added linters to the team projects to speed up code reviews and catch mistakes early.
 :    **On-time Delivery:** Guided the team to provide accurate high-level and mid-level project estimates. Result: the team completed projects on time using Agile/SCRUM methodologies.
+:    **EQ:** Leveraged Emotional Intelligence practices to foster a collaborative and enabling team environment.
 
 ----
 
