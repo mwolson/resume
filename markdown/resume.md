@@ -28,9 +28,7 @@ Sr. Manager:
 :    **Quality Control:** Added linters to the team projects to speed up code reviews and catch mistakes early.
 :    **On-time Delivery:** Guided the team to provide accurate high-level and mid-level project estimates. Result: the team completed projects on time using Agile/SCRUM methodologies.
 
-----
-
-\pagebreak
+\
 
 **Ticketmaster: Sr. Engineer** (2008-2016)
 
