@@ -1,6 +1,8 @@
 The Markdown Resume
 ===================
 
+Original implementation: https://github.com/mszep/pandoc_resume
+
 ### Instructions
 
 ```bash
@@ -40,7 +42,7 @@ make FORMATS="html pdf" docker
 
 or without having `make` installed:
 
-``` bash
+```bash
 docker compose run --build --rm resume-make html pdf
 docker compose down
 ```
@@ -54,7 +56,7 @@ docker image rm resume-make
 
 #### Custom styles
 
-You can check the styles directory to custom your file styles. Make sure you system have the corresponding font in your style file, such as changing "Helvetica" to "freesans".
+You can check the `styles/` directory to customize your CSS and TeX styles. Make sure you system have the corresponding font in your style file, such as changing "Helvetica" to "freesans".
 
 ### Requirements
 
@@ -116,6 +118,7 @@ pandoc --version
 ```
 
 #### Cannot process lua
+
 Currently pandoc 1.x may be within your distro's repos and the latest version should be used. See the
 [pandoc releases](https://github.com/jgm/pandoc/releases) for your distro.
 
@@ -126,6 +129,7 @@ sudo dpkg -i pandoc-2.2.1-1-amd64.deb
 ```
 
 #### Context executable cannot be found
+
 Some users have reported problems where their system does not properly find the ConTeXt
 executable, leading to errors like `Cannot find context.lua` or similar. It has been found
 that running `mtxrun --generate`, ([suggested on texlive-2011-context-problem](
