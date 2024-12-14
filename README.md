@@ -58,6 +58,10 @@ docker image rm resume-make
 
 You can check the `styles/` directory to customize your CSS and TeX styles. Make sure you system have the corresponding font in your style file, such as changing "Helvetica" to "freesans".
 
+#### Paper size
+
+The default paper size for PDF documents is `letter`. To change it, edit the "pdf" rule in `Makefile` and set `papersize=A4`.
+
 ### Requirements
 
 If not using `docker` then you will need the following dependencies.
