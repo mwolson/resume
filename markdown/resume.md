@@ -26,7 +26,7 @@ Sr. Manager:
 :    **Upleveling:** Mentored engineers and guided them towards achieving their goals, facilitating career advancement.
 :    **Team Culture:** Applied Emotional Intelligence (EQ) practices to cultivate a supportive team culture, enhancing work-life balance and collaboration for a multi-level engineering team of 12 full-time staff.
 :    **Quality Control:** Added linters to the team projects to speed up code reviews and catch mistakes early.
-:    **On-time Delivery:** Guided the team to provide accurate high-level and mid-level project estimates. Result: the team completed projects on time using Agile/SCRUM methodologies.
+:    **On-time Delivery:** Guided the team to provide accurate high-level and mid-level project estimates. Result: the team completed projects on time using Agile/SCRUM methodologies in both traditional and stream-aligned pod settings.
 
 \
 
