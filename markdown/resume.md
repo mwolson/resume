@@ -12,7 +12,9 @@ Experience
 
 **TigerConnect: Staff Engineer, Sr. Manager** (2017-2024)
 
-Improved various features on the existing messenger app, which is used by doctors and nurses at hospitals to securely communicate about patient details in a way that complies with HIPAA requirements. The customer deployment impact of TigerConnect Messenger is that it typically reduces the number of fatal accidents, improves staff retention and happiness, and cuts wait times for the ER by about half.
+Implemented significant improvements to the existing TigerConnect Messenger Web App, which is used by 700,000+ doctors, nurses, and other care team members at 7,000 healthcare organizations, or 5 of the 10 largest US hospitals. TigerConnect Messenger is used to securely communicate about patient details in a way that complies with HIPAA requirements.
+
+The customer deployment impact of TigerConnect Messenger is that it reduces fatal accidents such as sepsis, improves staff retention and happiness, and often cuts wait times for the ER by about half.
 
 Staff Engineer:
 :    **Messenger Web App:** Improved website page load performance, GitHub Actions build pipeline performance, and responsiveness under load. Key technologies: TypeScript, React, MobX, Redux ToolKit (RTK), SCSS, Playwright, npm.
@@ -22,9 +24,9 @@ Staff Engineer:
 
 Sr. Manager:
 :    **Upleveling:** Mentored engineers and guided them towards achieving their goals, facilitating career advancement.
+:    **Team Culture:** Applied Emotional Intelligence (EQ) practices to cultivate a supportive team culture, enhancing work-life balance and collaboration for a multi-level engineering team of 12 full-time staff.
 :    **Quality Control:** Added linters to the team projects to speed up code reviews and catch mistakes early.
 :    **On-time Delivery:** Guided the team to provide accurate high-level and mid-level project estimates. Result: the team completed projects on time using Agile/SCRUM methodologies.
-:    **EQ:** Leveraged Emotional Intelligence practices to foster a collaborative and enabling team environment with good work/life balance.
 
 ----
 
