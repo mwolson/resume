@@ -15,16 +15,16 @@ Experience
 Improved various features on the existing messenger app, which is used by doctors and nurses at hospitals to securely communicate about patient details in a way that complies with HIPAA requirements. The deployment impact of TigerConnect Messenger is that it typically reduces the number of fatal accidents, improves staff retention and happiness, and cuts wait times for the ER by about half.
 
 Staff Engineer:
-:    **Messenger Web App:** Improved website page load performance, GitHub Actions build pipeline performance, and responsiveness under load. Key technologies: React, MobX, Redux ToolKit (RTK), SCSS, Playwright.
+:    **Messenger Web App:** Improved website page load performance, GitHub Actions build pipeline performance, and responsiveness under load. Key technologies: Typescript, React, MobX, Redux ToolKit (RTK), SCSS, Playwright, npm.
 :    **Electron Desktop App**: Wrote a TypeScript Electron app to allow the Messenger website to run with additional functionality such as native OS notifications for incoming messages and alerts. Extended 5+ npm libraries to provide early support for a new version of Electron.
-:    **AWS Cloudfront Node.js Lambda:** Wrote sophisticated routing and support for rolling deployments of the Messenger website to 4 US regions, as well as the company's only unit testing and integration testing of a single layer of infrastructure.
+:    **AWS Cloudfront Node.js Lambda:** Terraform deployment with sophisticated routing and support for rolling deployments of the Messenger website to 4 US regions - classifying by groups of US states - as well as the company's only unit testing and integration testing of a single layer of infrastructure.
 :    **Customer Support:** Interfaced with a 1MM+ ARR customer to solve complex responsiveness problems with the Messenger app, providing a multi-stage plan along with presenting timely updates as the work progressed. Result: Customer was impressed and retained their subscription.
 
 Sr. Manager:
 :    **Upleveling:** Mentored engineers and guided them towards achieving their goals, facilitating career advancement.
 :    **Quality Control:** Added linters to the team projects to speed up code reviews and catch mistakes early.
 :    **On-time Delivery:** Guided the team to provide accurate high-level and mid-level project estimates. Result: the team completed projects on time using Agile/SCRUM methodologies.
-:    **EQ:** Leveraged Emotional Intelligence practices to foster a collaborative and enabling team environment.
+:    **EQ:** Leveraged Emotional Intelligence practices to foster a collaborative and enabling team environment with good work/life balance.
 
 ----
 
