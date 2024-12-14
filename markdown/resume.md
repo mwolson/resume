@@ -12,7 +12,7 @@ Experience
 
 **TigerConnect: Staff Engineer, Sr. Manager** (2017-2024)
 
-Improved various features on the existing messenger app, which is used by doctors and nurses at hospitals to securely communicate about patient details in a way that complies with HIPAA requirements. The deployment impact of TigerConnect Messenger is that it typically reduces the number of fatal accidents, improves staff retention and happiness, and cuts wait times for the ER by about half.
+Improved various features on the existing messenger app, which is used by doctors and nurses at hospitals to securely communicate about patient details in a way that complies with HIPAA requirements. The customer deployment impact of TigerConnect Messenger is that it typically reduces the number of fatal accidents, improves staff retention and happiness, and cuts wait times for the ER by about half.
 
 Staff Engineer:
 :    **Messenger Web App:** Improved website page load performance, GitHub Actions build pipeline performance, and responsiveness under load. Key technologies: Typescript, React, MobX, Redux ToolKit (RTK), SCSS, Playwright, npm.
