@@ -69,6 +69,7 @@ clean:
 	rm -fr $(OUT_DIR)/*
 
 docker: clean
+	docker compose kill 2> /dev/null
 	docker compose run --build --rm resume-make $(FORMATS)
 	docker compose down
 
