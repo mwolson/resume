@@ -1,4 +1,4 @@
-name: Deploy Resume to Pages
+name: Deploy Resume to GitHub Pages
 
 on:
   workflow_run:
