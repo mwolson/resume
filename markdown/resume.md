@@ -70,7 +70,7 @@ Open Source
     * Maintained and wrote a **MusicPD** backend for **EMMS**, a music player for Emacs.
 
 HCoop
-:   Acted as a volunteer Sysadmin for HCoop for a few years, implementing a Postfix deployment that delivered mail to a research filesystem.
+:   Acted as a volunteer Sysadmin for HCoop for a few years. Implemented a Postfix deployment that delivered mail to a research filesystem, an automated SSL Certificate Authority, among other changes. Wrote enhancements to a "compiler" called DomTool that transformed user configuration files into system configuration files with safety, written in SML.
 
 Programming Languages
 :   **TypeScript and JavaScript:** 15+ years of professional experience writing production code for Frontend and Platform.
