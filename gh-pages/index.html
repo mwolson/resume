@@ -5,8 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mike Olson's Resume</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
-    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script type="module">
+      import React from "https://esm.sh/react@19";
+      import ReactDOMClient from "https://esm.sh/react-dom@19/client";
+
+      window.React = React;
+      window.ReactDOMClient = ReactDOMClient;
+    </script>
   </head>
   <body>
     <div id="root"></div>
@@ -20,7 +25,8 @@
                 Mike Olson's Resume
               </h1>
               <p className="text-xl text-gray-600">
-                Professional Portfolio and Career Highlights
+                Qualified for Sr. Staff Software Engineer and Director of
+                Engineering Positions
               </p>
             </header>
             <div className="flex space-x-8">
@@ -81,7 +87,8 @@
         );
       }
 
-      ReactDOM.render(<ResumeLandingPage />, document.getElementById("root"));
+      const root = ReactDOMClient.createRoot(document.getElementById("root"));
+      root.render(<ResumeLandingPage />);
     </script>
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
   </body>
