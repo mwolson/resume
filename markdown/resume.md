@@ -8,8 +8,8 @@ Mike Olson
 
 ----
 
-Experience
-----------
+Professional Experience
+-----------------------
 
 **TigerConnect: Staff Engineer, Sr. Manager** (2017-2024)
 
