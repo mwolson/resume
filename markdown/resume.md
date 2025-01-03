@@ -17,17 +17,18 @@ Implemented significant improvements to the existing TigerConnect Messenger Web 
 
 The customer deployment impact of TigerConnect Messenger is that it reduces fatal accidents such as sepsis, improves staff retention and happiness, and often cuts wait times for the ER by about half.
 
-Staff Engineer:
-:    **Messenger Web App:** Improved website page load performance, GitHub Actions build pipeline performance, and responsiveness under load. Key technologies: TypeScript, React, MobX, Redux ToolKit (RTK), SCSS, Playwright, npm.
-:    **Electron Desktop App**: Wrote a TypeScript Electron app to allow the Messenger website to run with additional functionality such as native OS notifications for incoming messages and alerts. Extended 5+ npm libraries to provide early support for a new version of Electron.
-:    **AWS Cloudfront Node.js Lambda:** Terraform deployment with sophisticated routing and support for rolling deployments of the Messenger website to 4 US regions - classifying by groups of US states - as well as the company's only unit testing and integration testing of a single layer of infrastructure.
-:    **Customer Support:** Interfaced with a 1MM+ ARR customer to solve complex responsiveness problems with the Messenger app, providing a multi-stage plan along with presenting timely updates as the work progressed.
-
 Sr. Manager:
 :    **Upleveling:** Mentored engineers and guided them towards achieving their goals, facilitating career advancement.
 :    **Team Culture:** Applied Emotional Intelligence (EQ) practices to cultivate a supportive team culture, enhancing work-life balance and collaboration for a **multi-level** engineering team of **12 full-time** staff.
 :    **Quality Control:** Documented team practices in **Notion** and GitHub; added linters to the team projects to speed up code reviews and catch mistakes early.
 :    **On-time Delivery:** Guided the team to provide accurate high-level and mid-level project estimates, resulting in completed on-time projects with Agile/SCRUM methodologies in both traditional and stream-aligned pod settings.
+:    **Hackathon:** Organized and ran an internal hackathon, seeding ideas from the top 10 customer requests, shipping 3 of them.
+
+Staff Engineer:
+:    **Messenger Web App:** Improved website page load performance, GitHub Actions build pipeline performance, and responsiveness under load. Key technologies: TypeScript, React, MobX, Redux ToolKit (RTK), SCSS, Playwright, npm.
+:    **Electron Desktop App**: Wrote a TypeScript Electron app to allow the Messenger website to run with additional functionality such as native OS notifications for incoming messages and alerts. Extended 5+ npm libraries to provide early support for a new version of Electron.
+:    **AWS Cloudfront Node.js Lambda:** Terraform deployment with sophisticated routing and support for rolling deployments of the Messenger website to 4 US regions - classifying by groups of US states - as well as the company's only unit testing and integration testing of a single layer of infrastructure.
+:    **Customer Support:** Interfaced with a 1MM+ ARR customer to solve complex responsiveness problems with the Messenger app, providing a multi-stage plan along with presenting timely updates as the work progressed.
 
 \
 
