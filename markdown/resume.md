@@ -3,21 +3,20 @@ Mike Olson
 
 ----
 
->  Qualified for Sr. Staff Software Engineer and Director of Engineering Positions \
->  in Frontend, Platform, or DevOps
+>  Engineering Manager, Frontend and Full-stack
 
 ----
 
 Professional Experience
 -----------------------
 
-**TigerConnect: Staff Engineer, Sr. Manager** (2017-2024)
+**TigerConnect: Sr. Engineering Manager, Staff Engineer** (2017-2024)
 
 Implemented significant improvements to the existing TigerConnect Messenger Web App, which is used by 700,000+ doctors, nurses, and other care team members at 7,000 healthcare organizations, or 5 of the 10 largest US hospitals. TigerConnect Messenger is used to securely communicate about patient details in a way that complies with HIPAA requirements.
 
 The customer deployment impact of TigerConnect Messenger is that it reduces fatal accidents such as sepsis, improves staff retention and happiness, and often cuts wait times for the ER by about half.
 
-Sr. Manager:
+Sr. Engineering Manager:
 :    **Upleveling:** Mentored engineers and guided them towards achieving their goals, facilitating career advancement.
 :    **Team Culture:** Applied Emotional Intelligence (EQ) practices to cultivate a supportive team culture, enhancing work-life balance and collaboration for a **multi-level** engineering team of **12 full-time** staff.
 :    **Quality Control:** Documented team practices in **Notion** and GitHub; added linters to the team projects to speed up code reviews and catch mistakes early.
@@ -79,9 +78,11 @@ Programming Languages
 
 :   **Bash:** 20+ years of writing shell scripts, including writing a [unit test framework](https://github.com/mwolson/barrt-sh).
 
+:   **Lisp:** 18+ years of writing and maintaing Emacs Lisp libraries to extend Emacs.
+
 :   **Java:** 5+ years of writing web backends and Platform microservices.
 
-:   Basic knowledge of **Powershell**, **Ansible**, **Terraform**, **C/C++**, **Lisp**, **Perl**, **Python**, **SML**.
+:   Basic knowledge of **Clojure**, **C/C++**, **Perl**, **Python**, **Scala**, **SML**.
 
 Operating Systems
 :   **Linux:** 20+ years of experience on Arch, Debian, Ubuntu, and Fedora. Was a package maintainer for Debian and Ubuntu.
@@ -95,5 +96,5 @@ Education
 
 ----
 
-> <me@mwolson.org> • [LinkedIn](https://www.linkedin.com/in/mike-olson-666a083/)\
+> <me@mwolson.org> • [LinkedIn](https://www.linkedin.com/in/mike-olson-666a083/) • [mwolson.org](https://mwolson.org/) \
 > Berrien Springs, MI, USA
