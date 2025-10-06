@@ -92,4 +92,5 @@ hr {
 table {
     width: 100%;
 }
+.extra-top-space { margin-top: 2em; }
 </style>
