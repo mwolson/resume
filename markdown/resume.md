@@ -1,7 +1,7 @@
 Mike Olson
 ==========
 
->  Engineering Manager | Staff Architect | Frontend and Full-stack
+>  **Engineering Manager | Staff Architect | Frontend and Full-stack**
 
 ```{=context}
 \blank[2*big]
@@ -12,19 +12,18 @@ Professional Experience {.extra-top-space}
 
 **Anchor OS: Staff Architect** (2025)
 
-Significantly improved the performance and responsiveness of the Anchor SDK to move the needle on customer feedback and improve ability to finalize new contracts. Mentored cross-functional backend API engineers to achieve better API performance. Introduced best practices to speed up the software development lifecycle. Leveraged AI code review tools to locate issues before merging.
+Significantly improved the performance and responsiveness of the Anchor SDK based on customer feedback to improve retention and ability to finalize new contracts. Mentored cross-functional backend API engineers to achieve better API performance. Introduced innovative best practices to speed up the software development lifecycle. Leveraged AI code review tools to locate issues before merging.
 
-Performance:
+Performance
 :    **Shadow root**: Migrated the SDK UI for customer websites from an iframe to a shadow root for better CSS isolation, page load performance, and responsiveness.
 :    **CDN**: Overhauled Fastly setup for improved cacheability of various endpoints.
 :    **Profiling**: Profiled page load behavior to locate inefficient dependency loading patterns and load them in parallel; curtailed worst-case behavior when ad-blockers were present.
 :    **Code Optimization**: Prevented API calls in prior page routes from impacting load time of the current route.
 
-Best Practices:
+Innovation
 :    **Proxy server**: Used AI coding tools to build proxy server that allowed hostfiling company domains to test local versions of the SDK against real customer websites, including local CA cert installation for correct HTTPS termination.
-:    **CI**: Migrated SDK repo to GitHub and sped up CI pipeline by 5x.
-:    Introduced **BlackSmith** for much faster GitHub runners.
-:    Introduced and trained **CodeRabbit** for better code review cycle.
+:    **CI/CD**: Migrated SDK repo to GitHub and sped up CI pipeline by 5x. Introduced **BlackSmith** for much faster GitHub runners.
+:    **Code review**: Introduced and trained **CodeRabbit** for better code review cycle, which prevented multiple production problems each week and identified issues that were causing sporadic integration test failures.
 
 **TigerConnect: Sr. Engineering Manager, Staff Engineer** (2017-2024)
 
@@ -32,14 +31,14 @@ Implemented significant improvements to the existing TigerConnect Messenger Web 
 
 The customer deployment impact of TigerConnect Messenger is that it reduces fatal accidents such as sepsis, improves staff retention and happiness, and often cuts wait times for the ER by about half.
 
-Sr. Engineering Manager:
+Management
 :    **Upleveling:** Mentored engineers and guided them towards achieving their goals, facilitating career advancement.
 :    **Team Culture:** Applied Emotional Intelligence (EQ) practices to cultivate a supportive team culture, enhancing work-life balance and collaboration for a **multi-level** engineering team of **12 full-time** staff.
-:    **Quality Control:** Documented team practices in **Notion** and GitHub; added linters to the team projects to speed up code reviews and catch mistakes early.
+:    **Quality Control:** Documented team practices in **Notion** and GitHub; added code formatters and linters to the team projects to speed up code reviews and catch mistakes early.
 :    **On-time Delivery:** Guided the team to provide accurate high-level and mid-level project estimates, resulting in completed on-time projects with Agile/SCRUM methodologies in both traditional and stream-aligned pod settings.
 :    **Hackathon:** Organized and ran an internal hackathon, seeding ideas from the top 10 customer requests, shipping 3 of them.
 
-Staff Engineer:
+Engineering
 :    **Messenger Web App:** Improved website page load performance, GitHub Actions build pipeline performance, and responsiveness under load. Key technologies: TypeScript, React, MobX, Redux ToolKit (RTK), SCSS, Playwright, npm.
 :    **Electron Desktop App**: Wrote a TypeScript Electron app to allow the Messenger website to run with additional functionality such as native OS notifications for incoming messages and alerts. Extended 5+ npm libraries to provide early support for a new version of Electron.
 :    **AWS Cloudfront Node.js Lambda:** Terraform deployment with sophisticated routing and support for rolling deployments of the Messenger website to 4 US regions - classifying by groups of US states - as well as the company's only unit testing and integration testing of a single layer of infrastructure.
@@ -49,15 +48,19 @@ Staff Engineer:
 
 Supported and maintained production websites written in Java, Perl, and React for displaying event information and purchasing events. Helped prepare for extraordinary traffic volumes during onsale situations, improved performance and quality, and developed load tests.
 
-Sr. Engineer:
+Performance
+:    Cut request latency in half for a data orchestration service by placing a **CDN** in front of it. Wrote unit tests for the CDN integration along with a [custom Bash framework](https://github.com/mwolson/barrt-sh) to run them.
+:    Wrote and presented a well-received **presentation on performance** during an All Engineering meeting which benchmarked and explained the underlying factors contributing to REST API performance of several languages at scale: Go, Erlang, Java, Perl.
+
+Scalability
 :    Wrote a **Node.js** Platform Microservice that scaled to **1MM+** requests per day, supported with custom analytics and reporting.
 :    Helped migrate the Ticketmaster events website to **Docker**.
-:    Cut request latency in half for a data orchestration service by placing a **CDN** in front of it. Wrote unit tests for the CDN integration along with a [custom Bash framework](https://github.com/mwolson/barrt-sh) to run them.
-:    Helped spin up and configure the company's **GitLab** instance, and wrote presentations to advise on Git and GitLab as key technology choices to replace SVN.
+
+Innovation
+:    Wrote the first integration of an **interactive seatmap** into the Ticketmaster events website. Before React was written, used DOM diffs to improve performance of tooltip rendering when moving the mouse over a large number of seats on the seatmap.
 :    Had involvement in the early development idea for [Talkback](https://github.com/ijpiantanida/talkback) while the author contracted for Ticketmaster, and adapted our integration test suite to use it. **Talkback** is a JS proxy that allows requests for multiple local services to be captured together and replayed for reproducible and maintainable integration tests.
 :    Wrote a sophisticated **codemod** to incrementally and automatically perform a very large code migration that spanned multiple sprints. Created several npm modules to support this.
-:    Wrote the first integration of an **interactive seatmap** into the Ticketmaster events website. Before React was written, used DOM diffs to improve performance of tooltip rendering when moving the mouse over a large number of seats on the seatmap.
-:    Wrote and presented a well-received **presentation on performance** during an All Engineering meeting which benchmarked and explained the underlying factors contributing to REST API performance of several languages at scale: Go, Erlang, Java, Perl.
+:    Helped spin up and configure the company's **GitLab** instance, and wrote presentations to advise on Git and GitLab as key technology choices to replace SVN.
 
 Technical Experience
 --------------------
@@ -78,7 +81,7 @@ Open Source
     * Maintained and wrote a **MusicPD** backend for **EMMS**, a music player for Emacs.
 
 Programming Concepts
-:   **AI**: Used opencode along with custom `AGENTS.md` file with various different AI providers to accelerate local development and review changes.
+:   **AI**: Used **opencode** TUI agent along with custom **AGENTS.md** file with various different AI providers to accelerate local development and review changes.
 :   **TypeScript and JavaScript:** 15+ years of professional experience writing production code for Frontend and Platform.
 :   **Bash:** 20+ years of writing shell scripts, including writing a [unit test framework](https://github.com/mwolson/barrt-sh).
 :   **Lisp:** 18+ years of writing and maintaing Emacs Lisp libraries to extend Emacs.
