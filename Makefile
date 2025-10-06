@@ -12,6 +12,7 @@ pdf: init
 		FILE_NAME=`basename $$f | sed 's/.md//g'`; \
 		echo $$FILE_NAME.pdf; \
 		pandoc --standalone --template $(STYLES_DIR)/$(STYLE).tex \
+			--lua-filter=pdc-section-color.lua \
 			--from markdown --to context \
 			--top-level-division=section \
 			--variable papersize=letter \

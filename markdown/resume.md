@@ -1,7 +1,9 @@
 Mike Olson
 ==========
 
+::: {.section-color}
 >  **Engineering Manager | Staff Architect | Frontend and Full-stack**
+:::
 
 ```{=context}
 \blank[2*big]
@@ -16,12 +18,12 @@ Significantly improved the performance and responsiveness of the Anchor SDK base
 
 Performance
 :    **Shadow root**: Migrated the SDK UI for customer websites from an iframe to a shadow root for better CSS isolation, page load performance, and responsiveness.
-:    **CDN**: Overhauled Fastly setup for improved cacheability of various endpoints.
+:    **CDN**: Overhauled Fastly setup to improve cacheability of various endpoints and locality of regional assets - this delivered a very noticeable page load and consistency (P99) improvement for nascent UK, EU, and AU customers.
 :    **Profiling**: Profiled page load behavior to locate inefficient dependency loading patterns and load them in parallel; curtailed worst-case behavior when ad-blockers were present.
 :    **Code Optimization**: Prevented API calls in prior page routes from impacting load time of the current route.
 
 Innovation
-:    **Proxy server**: Used AI coding tools to build proxy server that allowed hostfiling company domains to test local versions of the SDK against real customer websites, including local CA cert installation for correct HTTPS termination.
+:    **Proxy server**: Used AI coding tools to build a local proxy server that allowed hostfiling company domains to test local versions of the SDK against real customer websites, including local CA cert installation for correct HTTPS termination.
 :    **CI/CD**: Migrated SDK repo to GitHub and sped up CI pipeline by 5x. Introduced **BlackSmith** for much faster GitHub runners.
 :    **Code review**: Introduced and trained **CodeRabbit** for better code review cycle, which prevented multiple production problems each week and identified issues that were causing sporadic integration test failures.
 
@@ -93,16 +95,16 @@ Operating Systems
 :   **Linux:** 20+ years of experience on Arch, Debian, Ubuntu, and Fedora. Was a package maintainer for Debian and Ubuntu.
 :   **Windows:** 5+ years of experience supporting customers of a desktop app, including problem-solving around Integrated Windows Authentication (IWA) for SSO support.
 
+Education
+---------
+
 Certifications
 :   **AI Agents Fundamentals** (Hugging Face, 2025)
 :   **Hiring Your Team** (Lynda, 2017)
 :   **New Manager Fundamentals** (Lynda, 2017)
 
-Education
----------
-
-2004-2007
-:   **B.S., Computer Science** and **B.S., Mathematics**; Purdue University (West Lafayette)
+College
+:   **B.S., Computer Science** and **B.S., Mathematics** (Purdue University, 2004-2007)
 
 ```{=context}
 \blank[2*big]
@@ -110,5 +112,8 @@ Education
 
 ::: {.extra-top-space}
 > <me@mwolson.org> • [LinkedIn](https://www.linkedin.com/in/mike-olson-666a083/) • [mwolson.org](https://mwolson.org/) \
-> Berrien Springs, MI, USA
+:::
+
+::: {.section-color}
+> **Berrien Springs, MI, USA**
 :::
