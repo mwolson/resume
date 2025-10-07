@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" role="img" aria-label="m favicon">
+  <defs>
+    <style>
+      .bg { fill: #27272a; }
+      .glyph { fill: #d4d4d8; font: 600 54px Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; }
+    </style>
+  </defs>
+  <rect class="bg" x="0" y="0" width="64" height="64" rx="10" ry="10"/>
+  <text class="glyph" x="32" y="34" text-anchor="middle" dominant-baseline="middle">m</text>
+</svg>

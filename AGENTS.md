@@ -5,7 +5,7 @@
 - Build specific formats: `make FORMATS="html pdf" docker`
 - Without make: `docker compose run --build --rm resume-make html pdf && docker compose down`
 
-Outputs land in `output/`.
+Outputs land in `output/`. During `make html`, contents of `gh-pages/` are copied into `output/` for local testing.
 
 ## Useful Paths
 - Markdown sources: `markdown/`
@@ -20,7 +20,7 @@ Outputs land in `output/`.
 
 ## Verify Changes
 - Open built resume: `output/resume.html`
-- Open landing page: `gh-pages/index.html`
+- Open landing page: `output/index.html`
 
 Optional headless check (if Chromium is available) - the sizes correspond to a typical mobile and desktop layout:
 ```
@@ -28,8 +28,18 @@ B="file://$PWD"; C=chromium
 $C --headless=new --no-sandbox --disable-gpu \
   --window-size=375,800  --screenshot=output/resume-mobile.png  "$B/output/resume.html"
 $C --headless=new --no-sandbox --disable-gpu \
-  --window-size=375,800  --screenshot=output/landing-mobile.png "$B/gh-pages/index.html"
+  --window-size=375,800  --screenshot=output/landing-mobile.png "$B/output/index.html"
 ```
+
+## Icons
+- Source SVG: `gh-pages/favicon.svg`
+- Regenerate PNGs (preferred):
+  - `rsvg-convert -w 32 -h 32 -o gh-pages/favicon-32.png gh-pages/favicon.svg`
+  - `rsvg-convert -w 180 -h 180 -o gh-pages/apple-touch-icon.png gh-pages/favicon.svg`
+- If `rsvg-convert` is unavailable, alternatives:
+  - Inkscape: `inkscape gh-pages/favicon.svg -o gh-pages/favicon-32.png -w 32 -h 32`
+  - ImageMagick: `magick -background none gh-pages/favicon.svg -resize 32x32 -gravity center -extent 32x32 gh-pages/favicon-32.png`
+- After `make html`, these PNGs are also available under `output/` via copy. Test icons by opening `output/index.html`.
 
 ## Notes
 - Dark mode is applied via `html.dark` and toggled in both the landing page and resume HTML header. Printing forces light mode temporarily.

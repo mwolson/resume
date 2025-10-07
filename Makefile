@@ -30,6 +30,7 @@ html: init
 			--from markdown --to html \
 			--output $(OUT_DIR)/$$FILE_NAME.html $$f;\
 	done
+	cp -a gh-pages/* $(OUT_DIR)/
 
 docx: init
 	for f in $(IN_DIR)/*.md; do \
