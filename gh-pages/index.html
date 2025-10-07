@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,6 +7,13 @@
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png" />
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <style>
+      html.dark,
+      html.dark body {
+        background-color: #0f172a;
+        color: #c6c6df;
+      }
+    </style>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
@@ -25,7 +32,9 @@
           const prefersDark =
             window.matchMedia &&
             window.matchMedia("(prefers-color-scheme: dark)").matches;
-          const forceDark = /(?:[?&#](?:dark|theme)=?1)|#dark\b/i.test(location.search + location.hash);
+          const forceDark = /(?:[?&#](?:dark|theme)=?1)|#dark\b/i.test(
+            location.search + location.hash,
+          );
           const useDark = forceDark || ls === "dark" || (!ls && prefersDark);
           document.documentElement.classList.toggle("dark", !!useDark);
         } catch (e) {}
@@ -114,7 +123,7 @@
           }
         };
         return (
-          <div className="min-h-screen flex flex-col items-center justify-center bg-gray-100 dark:bg-slate-900">
+          <div className="min-h-[100svh] flex flex-col items-center justify-center bg-gray-100 dark:bg-slate-900">
             <div className="fixed top-4 right-4 z-50 flex items-center gap-3">
               <button
                 onClick={toggleTheme}
@@ -174,11 +183,11 @@
                 <span className="sr-only">GitHub</span>
               </a>
             </div>
-            <header className="text-center mb-12">
-              <h1 className="text-5xl text-gray-600 dark:text-sectionDark font-bold mb-4 px-4 sm:px-0">
+            <header className="text-center mb-10 sm:mb-12">
+              <h1 className="text-4xl sm:text-5xl text-gray-600 dark:text-sectionDark font-bold mb-4 px-4 sm:px-0">
                 {"Mike Olson's Resume"}
               </h1>
-              <p className="text-xl px-4 sm:px-0 dark:text-[#a188d3]">
+              <p className="text-lg sm:text-xl px-4 sm:px-0 dark:text-[#a188d3]">
                 Engineering Manager | Staff Architect | Frontend and Full-stack
               </p>
             </header>
