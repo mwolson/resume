@@ -14,7 +14,7 @@ body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   max-width: 800px;
   margin: auto;
-  background: #FFFFFF;
+  background: rgb(243 244 246);
   padding: 10px 10px 10px 10px;
 }
 html.dark body {
@@ -141,12 +141,15 @@ html.dark .section-color > blockquote > p > strong {
   position: fixed;
   top: 12px;
   right: 56px;
-  padding: 8px;
-  border-radius: 8px;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
   background: #ffffff;
   color: #6d6d8a;
   border: 1px solid rgba(109, 109, 138, 0.3);
-  box-shadow: 0 1px 2px rgba(0,0,0,0.08);
+  --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
   cursor: pointer;
   line-height: 0;
 }
@@ -167,12 +170,15 @@ html.dark .theme-toggle:hover {
   position: fixed;
   top: 12px;
   right: 12px;
-  padding: 8px;
-  border-radius: 8px;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
   background: #ffffff;
   color: #6d6d8a;
   border: 1px solid rgba(109, 109, 138, 0.3);
-  box-shadow: 0 1px 2px rgba(0,0,0,0.08);
+  --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
   cursor: pointer;
   line-height: 0;
 }
@@ -222,6 +228,19 @@ html.dark .print-button:hover {
     margin-bottom: 0.7em;
   }
 }
+
+/* Top actions container to align buttons like landing page */
+.top-actions {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  z-index: 50;
+}
+/* Buttons inside container are not individually positioned */
+.theme-toggle, .print-button { position: static; }
 </style>
 <script>
   (function () {
@@ -237,8 +256,8 @@ html.dark .print-button:hover {
 
     function renderIcon(isDark) {
       return isDark
-        ? '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4" /><path d="M12 2v2M12 20v2M4 12H2M22 12h-2M5.64 5.64L4.22 4.22M19.78 19.78l-1.42-1.42M18.36 5.64l1.42-1.42M4.22 19.78l1.42-1.42" /></svg><span class="sr-only">Switch to light mode</span>'
-        : '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z" /></svg><span class="sr-only">Switch to dark mode</span>';
+        ? '<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4" /><path d="M12 2v2M12 20v2M4 12H2M22 12h-2M5.64 5.64L4.22 4.22M19.78 19.78l-1.42-1.42M18.36 5.64l1.42-1.42M4.22 19.78l1.42-1.42" /></svg><span class="sr-only">Switch to light mode</span>'
+        : '<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z" /></svg><span class="sr-only">Switch to dark mode</span>';
     }
 
     function updateButton(isDark) {
@@ -257,49 +276,57 @@ html.dark .print-button:hover {
     }
 
     function ensureButton() {
-      if (document.getElementById('theme-toggle')) return;
-      var btn = document.createElement('button');
-      btn.id = 'theme-toggle';
-      btn.className = 'theme-toggle';
-      var currentDark = document.documentElement.classList.contains('dark');
-      btn.innerHTML = renderIcon(currentDark);
-      btn.setAttribute('aria-label', currentDark ? 'Switch to light mode' : 'Switch to dark mode');
-      btn.addEventListener('click', function () {
-        var next = !document.documentElement.classList.contains('dark');
-        setDark(next);
-      });
-      document.body.appendChild(btn);
-
-      var pbtn = document.createElement('button');
-      pbtn.id = 'print-button';
-      pbtn.className = 'print-button';
-      pbtn.setAttribute('aria-label', 'Print');
-      pbtn.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 6 2 18 2 18 9"></polyline><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect x="6" y="14" width="12" height="8"></rect></svg><span class="sr-only">Print</span>';
-      pbtn.addEventListener('click', function () {
-        try {
-          printInitiatedByButton = true;
-          if (previousThemeForPrint === null) {
-            previousThemeForPrint = document.documentElement.classList.contains('dark');
-          }
-          var mql = window.matchMedia && window.matchMedia('print');
-          printStarted = false;
-          if (printStartTimeout) {
-            clearTimeout(printStartTimeout);
-          }
-          printStartTimeout = setTimeout(openPdfFallback, 1200);
-          window.print();
-          if (mql && mql.matches) {
-            printStarted = true;
+      var container = document.getElementById('top-actions');
+      if (!container) {
+        container = document.createElement('div');
+        container.id = 'top-actions';
+        container.className = 'top-actions';
+        document.body.appendChild(container);
+      }
+      if (!document.getElementById('theme-toggle')) {
+        var btn = document.createElement('button');
+        btn.id = 'theme-toggle';
+        btn.className = 'theme-toggle';
+        var currentDark = document.documentElement.classList.contains('dark');
+        btn.innerHTML = renderIcon(currentDark);
+        btn.setAttribute('aria-label', currentDark ? 'Switch to light mode' : 'Switch to dark mode');
+        btn.addEventListener('click', function () {
+          var next = !document.documentElement.classList.contains('dark');
+          setDark(next);
+        });
+        container.appendChild(btn);
+      }
+      if (!document.getElementById('print-button')) {
+        var pbtn = document.createElement('button');
+        pbtn.id = 'print-button';
+        pbtn.className = 'print-button';
+        pbtn.setAttribute('aria-label', 'Print');
+        pbtn.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 6 2 18 2 18 9"></polyline><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect x="6" y="14" width="12" height="8"></rect></svg><span class="sr-only">Print</span>';
+        pbtn.addEventListener('click', function () {
+          try {
+            printInitiatedByButton = true;
+            if (previousThemeForPrint === null) {
+              previousThemeForPrint = document.documentElement.classList.contains('dark');
+            }
+            var mql = window.matchMedia && window.matchMedia('print');
+            printStarted = false;
             if (printStartTimeout) {
               clearTimeout(printStartTimeout);
-              printStartTimeout = null;
             }
+            printStartTimeout = setTimeout(openPdfFallback, 1200);
+            window.print();
+            if (mql && mql.matches) {
+              printStarted = true;
+              if (printStartTimeout) {
+                clearTimeout(printStartTimeout);
+                printStartTimeout = null;
+              }
+            }
+          } catch (e) {
           }
-        } catch (e) {
-          /* leave the timer to trigger fallback */
-        }
-      });
-      document.body.appendChild(pbtn);
+        });
+        container.appendChild(pbtn);
+      }
     }
 
     // Initialize theme
