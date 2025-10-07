@@ -11,198 +11,216 @@
 
 /* Whole document */
 body {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    max-width: 800px;
-    margin: auto;
-    background: #FFFFFF;
-    padding: 10px 10px 10px 10px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  max-width: 800px;
+  margin: auto;
+  background: #FFFFFF;
+  padding: 10px 10px 10px 10px;
 }
 html.dark body {
-    background: #0f172a;
-    color: #cbd5e1;
+  background: #0f172a;
+  color: #cbd5e1;
 }
 
 /* Title of the resume */
 h1 {
-    font-size: 55px;
-    color: #4b5563;
-    text-align:center;
-    margin-bottom:15px;
+  font-size: 55px;
+  color: #4b5563;
+  text-align:center;
+  margin-bottom:15px;
 }
 html.dark h1 {
-    color: #c6c6df;
+  color: #c6c6df;
 }
 
 /* Titles of categories */
 h2 {
-    /* This is called "sectioncolor" in the ConTeXt stylesheet. */
-    color: #6d6d8a;
+  /* This is called "sectioncolor" in the ConTeXt stylesheet. */
+  color: #6d6d8a;
 }
 html.dark h2 {
-    color: rgb(59 130 246);
+  color: rgb(59 130 246);
 }
 /* There is a bar just before each category */
 h2:before {
-    content: "";
-    display: inline-block;
-    margin-right: 17px;
-    width: 16%;
-    height: 10px;
-    /* This is called "rulecolor" in the ConTeXt stylesheet. */
-    background-color: #cdcbd9;
+  content: "";
+  display: inline-block;
+  margin-right: 17px;
+  width: 16%;
+  height: 10px;
+  /* This is called "rulecolor" in the ConTeXt stylesheet. */
+  background-color: #cdcbd9;
 }
 html.dark h2:before {
-    background-color: rgb(96 165 250);
+  background-color: rgb(96 165 250);
 }
 
 /* Definitions */
 dt {
-    float: left;
-    clear: left;
-    width: 17%;
-    font-weight: bold;
-    color: #4b5563;
+  float: left;
+  clear: left;
+  width: 17%;
+  font-weight: bold;
+  color: #4b5563;
 }
 html.dark dt {
-    color: #a188d3;
+  color: #a188d3;
 }
 
 dd {
-    margin-left: 17%;
-    margin-bottom:7px;
+  margin-left: 17%;
+  margin-bottom:7px;
 }
 
 p {
-    margin-top:0;
-    margin-bottom:7px;
+  margin-top:0;
+  margin-bottom:7px;
 }
 
 /* Emphasis */
 html.dark strong, html.dark b {
-    color: rgb(96 165 250);
+  color: rgb(96 165 250);
 }
 
 /* Blockquotes */
 blockquote {
-    text-align: center
+  text-align: center
 }
 
 /* Links */
 a {
-    color: #6d6d8a;
-    font-weight: bold;
+  color: #6d6d8a;
+  font-weight: bold;
 }
 html.dark a {
-    color: #A6A6A6;
+  color: #A6A6A6;
 }
 
 a:hover, a:active {
-    background-color: #6d6d8a;
-    color: #FFFFFF;
-    text-shadow: 1px 1px 1px #333;
+  background-color: #6d6d8a;
+  color: #FFFFFF;
+  text-shadow: 1px 1px 1px #333;
 }
 html.dark a:hover, html.dark a:active {
-    background-color: #A6A6A6;
-    color: #FFFFFF;
-    text-shadow: 1px 1px 1px #111;
+  background-color: #A6A6A6;
+  color: #FFFFFF;
+  text-shadow: 1px 1px 1px #111;
 }
 
 /* Horizontal separators */
 hr {
-    color: #A6A6A6;
+  color: #A6A6A6;
 }
 html.dark hr {
-    color: #4b5563;
+  color: #4b5563;
 }
 
 /* Tables */
 table {
-    width: 100%;
+  width: 100%;
 }
 
 /* Utilities */
 .extra-top-space {
-    margin-top: 2em;
+  margin-top: 2em;
 }
 
 .section-color,
 .section-color > blockquote > p > a,
 .section-color > blockquote > p > strong {
-    color: #6d6d8a;
+  color: #6d6d8a;
 }
 html.dark section-color,
 html.dark .section-color > blockquote > p > a,
 html.dark .section-color > blockquote > p > strong {
-    color: #a188d3;
+  color: #a188d3;
 }
 
 /* Theme toggle button */
 .theme-toggle {
-    position: fixed;
-    top: 12px;
-    right: 56px;
-    padding: 8px;
-    border-radius: 8px;
-    background: #ffffff;
-    color: #6d6d8a;
-    border: 1px solid rgba(109, 109, 138, 0.3);
-    box-shadow: 0 1px 2px rgba(0,0,0,0.08);
-    cursor: pointer;
-    line-height: 0;
+  position: fixed;
+  top: 12px;
+  right: 56px;
+  padding: 8px;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #6d6d8a;
+  border: 1px solid rgba(109, 109, 138, 0.3);
+  box-shadow: 0 1px 2px rgba(0,0,0,0.08);
+  cursor: pointer;
+  line-height: 0;
 }
 .theme-toggle:hover {
-    background: #f9fafb;
+  background: #f9fafb;
 }
 html.dark .theme-toggle {
-    background: #1f2937;
-    color: #c6c6df;
-    border-color: rgba(198,198,223,0.3);
+  background: #1f2937;
+  color: #c6c6df;
+  border-color: rgba(198,198,223,0.3);
 }
 html.dark .theme-toggle:hover {
-    background: #334155;
+  background: #334155;
 }
 
 /* Print button */
 .print-button {
-    position: fixed;
-    top: 12px;
-    right: 12px;
-    padding: 8px;
-    border-radius: 8px;
-    background: #ffffff;
-    color: #6d6d8a;
-    border: 1px solid rgba(109, 109, 138, 0.3);
-    box-shadow: 0 1px 2px rgba(0,0,0,0.08);
-    cursor: pointer;
-    line-height: 0;
+  position: fixed;
+  top: 12px;
+  right: 12px;
+  padding: 8px;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #6d6d8a;
+  border: 1px solid rgba(109, 109, 138, 0.3);
+  box-shadow: 0 1px 2px rgba(0,0,0,0.08);
+  cursor: pointer;
+  line-height: 0;
 }
 .print-button:hover {
-    background: #f9fafb;
+  background: #f9fafb;
 }
 html.dark .print-button {
-    background: #1f2937;
-    color: #c6c6df;
-    border-color: rgba(198,198,223,0.3);
+  background: #1f2937;
+  color: #c6c6df;
+  border-color: rgba(198,198,223,0.3);
 }
 html.dark .print-button:hover {
-    background: #334155;
+  background: #334155;
 }
 
 /* Screen reader only */
 .sr-only {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    white-space: nowrap;
-    border: 0;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }
 
 @media print {
-.theme-toggle, .print-button { display: none !important; }
+  .theme-toggle, .print-button { display: none !important; }
+}
+
+/* Mobile layout: stack terms and descriptions */
+@media (max-width: 640px) {
+  dt, dd {
+    float: none;
+    clear: none;
+    width: auto;
+    margin: 0;
+  }
+  dt {
+    display: block;
+    margin-bottom: 0.5em;
+  }
+  dd {
+    display: block;
+    margin-bottom: 0.7em;
+  }
 }
 </style>
 <script>
