@@ -216,17 +216,20 @@ html.dark .print-button:hover {
         return ls === 'dark' || (!ls && prefersDark);
       } catch (e) { return false; }
     }
+
     function renderIcon(isDark) {
       return isDark
         ? '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4" /><path d="M12 2v2M12 20v2M4 12H2M22 12h-2M5.64 5.64L4.22 4.22M19.78 19.78l-1.42-1.42M18.36 5.64l1.42-1.42M4.22 19.78l1.42-1.42" /></svg><span class="sr-only">Switch to light mode</span>'
         : '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z" /></svg><span class="sr-only">Switch to dark mode</span>';
     }
+
     function updateButton(isDark) {
       var btn = document.getElementById('theme-toggle');
       if (!btn) return;
       btn.setAttribute('aria-label', isDark ? 'Switch to light mode' : 'Switch to dark mode');
       btn.innerHTML = renderIcon(isDark);
     }
+
     function setDark(useDark, opts) {
       document.documentElement.classList.toggle('dark', !!useDark);
       if (!opts || opts.persist !== false) {
@@ -234,6 +237,7 @@ html.dark .print-button:hover {
       }
       updateButton(!!useDark);
     }
+
     function ensureButton() {
       if (document.getElementById('theme-toggle')) return;
       var btn = document.createElement('button');
@@ -259,14 +263,22 @@ html.dark .print-button:hover {
           if (previousThemeForPrint === null) {
             previousThemeForPrint = document.documentElement.classList.contains('dark');
           }
-          setDark(false, { persist: false });
           var mql = window.matchMedia && window.matchMedia('print');
+          printStarted = false;
+          if (printStartTimeout) {
+            clearTimeout(printStartTimeout);
+          }
+          printStartTimeout = setTimeout(openPdfFallback, 1200);
           window.print();
-          if (!(mql && mql.matches)) {
-            handleAfterPrint();
+          if (mql && mql.matches) {
+            printStarted = true;
+            if (printStartTimeout) {
+              clearTimeout(printStartTimeout);
+              printStartTimeout = null;
+            }
           }
         } catch (e) {
-          handleAfterPrint();
+          /* leave the timer to trigger fallback */
         }
       });
       document.body.appendChild(pbtn);
@@ -284,19 +296,43 @@ html.dark .print-button:hover {
     // Force light mode for printing and restore afterward
     var previousThemeForPrint = null;
     var printInitiatedByButton = false;
+    var printStartTimeout = null;
+    var printStarted = false;
+
+    function openPdfFallback() {
+      if (printStarted) return;
+      var href = window.location.href;
+      var pdfHref;
+      if (/\.html(\?|#|$)/.test(href)) {
+        pdfHref = href.replace(/\.html(\?|#|$)/, '.pdf$1');
+      } else if (/\/(\?|#|$)/.test(href)) {
+        pdfHref = href.replace(/\/(\?|#|$)/, '/index.pdf$1');
+      } else {
+        pdfHref = href + '.pdf';
+      }
+      try { window.open(pdfHref, '_blank', 'noopener'); } catch (e) {}
+      handleAfterPrint();
+    }
+
     function handleBeforePrint() {
       if (previousThemeForPrint === null) {
         previousThemeForPrint = document.documentElement.classList.contains('dark');
       }
       setDark(false, { persist: false });
+      printStarted = true;
+      if (printStartTimeout) { clearTimeout(printStartTimeout); printStartTimeout = null; }
     }
+
     function handleAfterPrint() {
       if (previousThemeForPrint !== null) {
         setDark(!!previousThemeForPrint, { persist: false });
         previousThemeForPrint = null;
       }
+      if (printStartTimeout) { clearTimeout(printStartTimeout); printStartTimeout = null; }
+      printStarted = false;
       printInitiatedByButton = false;
     }
+
     if (typeof window !== 'undefined') {
       if ('onbeforeprint' in window) {
         window.addEventListener('beforeprint', handleBeforePrint);
