@@ -1,3 +1,7 @@
+---
+pagetitle: "Mike Olson - Resume"
+---
+
 Mike Olson
 ==========
 
@@ -110,7 +114,7 @@ College
 \blank[2*big]
 ```
 
-::: {.extra-top-space}
+::: {.extra-top-space .section-color}
 > <me@mwolson.org> • [LinkedIn](https://www.linkedin.com/in/mike-olson-666a083/) • [mwolson.org](https://mwolson.org/) \
 :::
 

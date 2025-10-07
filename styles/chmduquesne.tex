@@ -15,12 +15,12 @@ $if(mainlang)$
 $endif$
 
 \setupcolor[hex]
-\definecolor[titlegrey][h=515565]
+\definecolor[titlegrey][h=4b5563]
 \definecolor[sectioncolor][h=6d6d8a]
 \definecolor[rulecolor][h=cdcbd9]
 
 % Enable hyperlinks
-\setupinteraction[state=start, color=sectioncolor, style={\underbar\bf}]
+\setupinteraction[state=start, color=sectioncolor, style={\underbar\bf}, title={$if(pagetitle)$$pagetitle$$else$$title$$endif$}]
 
 \setuppapersize [$if(papersize)$$papersize$$else$letter$endif$][$if(papersize)$$papersize$$else$letter$endif$]
 \setuplayout    [width=middle, height=middle,
@@ -51,7 +51,7 @@ $endif$
 
 \definedescription
   [description]
-  [headstyle=bold, style=normal,
+  [headstyle=bold, headcolor=titlegrey, style=normal,
    location=hanging, width=18mm, distance=14mm, margin=0cm]
 
 \setupitemize[autointro, packed]    % prevent orphan list intro

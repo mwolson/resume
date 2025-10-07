@@ -1,3 +1,7 @@
+---
+pagetitle: "Cover Letter"
+---
+
 Mike Olson
 ==========
 
