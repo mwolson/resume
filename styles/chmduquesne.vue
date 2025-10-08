@@ -96,7 +96,7 @@ a {
   font-weight: bold;
 }
 html.dark a {
-  color: #A6A6A6;
+  color: #a188d3;
 }
 
 a:hover, a:active {
@@ -105,9 +105,8 @@ a:hover, a:active {
   text-shadow: 1px 1px 1px #333;
 }
 html.dark a:hover, html.dark a:active {
-  background-color: #A6A6A6;
-  color: #FFFFFF;
-  text-shadow: 1px 1px 1px #111;
+  background-color: #a188d3;
+  color: rgb(243 244 246);
 }
 
 /* Horizontal separators */
@@ -129,12 +128,10 @@ table {
 }
 
 .section-color,
-.section-color > blockquote > p > a,
 .section-color > blockquote > p > strong {
   color: #6d6d8a;
 }
 html.dark section-color,
-html.dark .section-color > blockquote > p > a,
 html.dark .section-color > blockquote > p > strong {
   color: #a188d3;
 }
