@@ -58,6 +58,11 @@ html.dark h2:before {
   background-color: rgb(96 165 250);
 }
 
+/* h3 headers */
+html.dark h3 {
+  color: #a188d3;
+}
+
 /* Definitions */
 dt {
   float: left;

@@ -2,8 +2,7 @@
 pagetitle: "Mike Olson - Resume"
 ---
 
-Mike Olson
-==========
+# Mike Olson
 
 ::: {.section-color}
 >  **Engineering Manager | Staff Architect | Frontend and Full-stack**
@@ -13,10 +12,9 @@ Mike Olson
 \blank[2*big]
 ```
 
-Professional Experience {.extra-top-space}
------------------------
+## Professional Experience {.extra-top-space}
 
-**Anchor OS: Staff Architect** (2025)
+### Anchor OS: Staff Architect (2025)
 
 Significantly improved the performance and responsiveness of the Anchor SDK based on customer feedback to improve retention and ability to finalize new contracts. Mentored cross-functional backend API engineers to achieve better API performance. Introduced innovative best practices to speed up the software development lifecycle. Leveraged AI code review tools to locate issues before merging.
 
@@ -31,7 +29,7 @@ Innovation
 :    **CI/CD**: Migrated SDK repo to GitHub and sped up CI pipeline by 5x. Introduced **BlackSmith** for much faster GitHub runners.
 :    **Code review**: Introduced and trained **CodeRabbit** for better code review cycle, which prevented multiple production problems each week and identified issues that were causing sporadic integration test failures.
 
-**TigerConnect: Sr. Engineering Manager, Staff Engineer** (2017-2024)
+### TigerConnect: Sr. Engineering Manager, Staff Engineer (2017-2024)
 
 Implemented significant improvements to the existing TigerConnect Messenger Web App, which is used by 700,000+ doctors, nurses, and other care team members at 7,000 healthcare organizations, or 5 of the 10 largest US hospitals. TigerConnect Messenger is used to securely communicate about patient details in a way that complies with HIPAA requirements.
 
@@ -50,7 +48,7 @@ Engineering
 :    **AWS Cloudfront Node.js Lambda:** Terraform deployment with sophisticated routing and support for rolling deployments of the Messenger website to 4 US regions - classifying by groups of US states - as well as the company's only unit testing and integration testing of a single layer of infrastructure.
 :    **Customer Support:** Interfaced with a 1MM+ ARR customer to solve complex responsiveness problems with the Messenger app, providing a multi-stage plan along with presenting timely updates as the work progressed.
 
-**Ticketmaster: Sr. Engineer** (2008-2016)
+### Ticketmaster: Sr. Engineer (2008-2016)
 
 Supported and maintained production websites written in Java, Perl, and React for displaying event information and purchasing events. Helped prepare for extraordinary traffic volumes during onsale situations, improved performance and quality, and developed load tests.
 
@@ -68,8 +66,7 @@ Innovation
 :    Wrote a sophisticated **codemod** to incrementally and automatically perform a very large code migration that spanned multiple sprints. Created several npm modules to support this.
 :    Helped spin up and configure the company's **GitLab** instance, and wrote presentations to advise on Git and GitLab as key technology choices to replace SVN.
 
-Technical Experience
---------------------
+## Technical Experience
 
 Gift Exchange Website
 :   Side project to allow family members to buy each other gifts for the holiday and avoid having two people buy the same gift for the same person.
@@ -99,8 +96,7 @@ Operating Systems
 :   **Linux:** 20+ years of experience on Arch, Debian, Ubuntu, and Fedora. Was a package maintainer for Debian and Ubuntu.
 :   **Windows:** 5+ years of experience supporting customers of a desktop app, including problem-solving around Integrated Windows Authentication (IWA) for SSO support.
 
-Education
----------
+## Education
 
 Certifications
 :   **AI Agents Fundamentals** (Hugging Face, 2025)
