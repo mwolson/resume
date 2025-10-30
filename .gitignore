@@ -1,8 +1,9 @@
 *.log
 *.swo
 *.swp
+.DS_Store
+.direnv
+.envrc
 output/
 result
 result-*
-.envrc
-.direnv

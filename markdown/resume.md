@@ -64,7 +64,7 @@ Innovation
 :    Wrote the first integration of an **interactive seatmap** into the Ticketmaster events website. Before React was written, used DOM diffs to improve performance of tooltip rendering when moving the mouse over a large number of seats on the seatmap.
 :    Had involvement in the early development idea for [Talkback](https://github.com/ijpiantanida/talkback) while the author contracted for Ticketmaster, and adapted our integration test suite to use it. **Talkback** is a JS proxy that allows requests for multiple local services to be captured together and replayed for reproducible and maintainable integration tests.
 :    Wrote a sophisticated **codemod** to incrementally and automatically perform a very large code migration that spanned multiple sprints. Created several npm modules to support this.
-:    Helped spin up and configure the company's **GitLab** instance, and wrote presentations to advise on Git and GitLab as key technology choices to replace SVN.
+:    Helped spin up and configure the company's GitLab instance, and wrote presentations to advise on Git and GitLab as key technology choices to replace SVN.
 
 ## Technical Experience
 
@@ -72,7 +72,7 @@ Gift Exchange Website
 :   Side project to allow family members to buy each other gifts for the holiday and avoid having two people buy the same gift for the same person.
 
     * Wrote the website infrastructure using a mix of **Skaffold**, **Kubernetes** (k3d and k3s), **Docker**, and **Bun**.
-    * Deployed the resulting Bookstack and MariaDB pods to a k3d cluster on a single Arch Linux server node with **Traefik** ingress controller as an exercise in keeping costs manageable.
+    * Deployed the resulting Bookstack and MariaDB pods to a k3d cluster on a single Arch Linux server node with **Caddy** ingress controller as an exercise in keeping costs minimal.
     * Tested changes locally using Skaffold profiles deployed to Rancher Desktop.
     * Configured **CloudFlare** as a CDN.
 
