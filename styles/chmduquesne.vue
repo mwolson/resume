@@ -170,6 +170,35 @@ html.dark .theme-toggle:hover {
   background: #334155;
 }
 
+/* Back button */
+.back-button {
+  position: fixed;
+  top: 12px;
+  left: 12px;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  background: #ffffff;
+  color: #6d6d8a;
+  border: 1px solid rgba(109, 109, 138, 0.3);
+  --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  cursor: pointer;
+  line-height: 0;
+}
+.back-button:hover {
+  background: #f9fafb;
+}
+html.dark .back-button {
+  background: #1f2937;
+  color: #c6c6df;
+  border-color: rgba(198,198,223,0.3);
+}
+html.dark .back-button:hover {
+  background: #334155;
+}
+
 /* Print button */
 .print-button {
   position: fixed;
@@ -213,7 +242,9 @@ html.dark .print-button:hover {
 }
 
 @media print {
-  .theme-toggle, .print-button { display: none !important; }
+  .theme-toggle, .print-button, .back-button {
+    display: none !important;
+  }
 }
 
 /* Mobile layout: stack terms and descriptions */
@@ -300,6 +331,17 @@ html.dark .print-button:hover {
           setDark(next);
         });
         container.appendChild(btn);
+      }
+      if (!document.getElementById('back-button')) {
+        var bbtn = document.createElement('button');
+        bbtn.id = 'back-button';
+        bbtn.className = 'back-button';
+        bbtn.setAttribute('aria-label', 'Go back');
+        bbtn.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"></path></svg><span class="sr-only">Go back</span>';
+        bbtn.addEventListener('click', function () {
+          window.location.href = 'https://mwolson.org/career/';
+        });
+        document.body.appendChild(bbtn);
       }
       if (!document.getElementById('print-button')) {
         var pbtn = document.createElement('button');
