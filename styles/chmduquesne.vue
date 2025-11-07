@@ -18,7 +18,7 @@ body {
   max-width: 800px;
   margin: auto;
   background: rgb(243 244 246);
-  padding: 10px 10px 10px 10px;
+  padding: 20px 10px 20px 10px;
 }
 html.dark body {
   background: #0f172a;
